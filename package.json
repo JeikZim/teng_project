@@ -1,0 +1,28 @@
+{
+    "name": "teng_project",
+    "version": "1.0.0",
+    "description": "Interective English learning app with interective tests",
+    "main": "app.js",
+    "scripts": {
+        "start": "cross-env NODE_ENV=production node app.js",
+        "server": "nodemon app.js",
+        "client": "concurrently \"npm run client:admin\" \"npm run client:user\"",
+        "client:admin": "npm run start --prefix client/admin",
+        "client:user": "npm run start --prefix client/user",
+        "client:install": "npm install --prefix client/admin && npm install --prefix client/user",
+        "client:build": "npm run build --prefix client/admin && npm run build --prefix client/user",
+        "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Ruslan Bagautdinov <bagautdinovwruslan@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "config": "^3.3.9",
+        "express": "^4.18.2",
+        "express-validator": "^7.0.1"
+    },
+    "devDependencies": {
+        "concurrently": "^8.0.1",
+        "cross-env": "^7.0.3",
+        "nodemon": "^2.0.22"
+    }
+}
