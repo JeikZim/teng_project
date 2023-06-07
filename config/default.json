@@ -1,8 +1,9 @@
 {
     "PORT": 8000,
+    "mongoUrl": "mongodb+srv://jeikzim:ckUnHvfgZE9OIhuu@maincluster.wjispze.mongodb.net/?retryWrites=true&w=majority",
     "baseUrl": "http://localhost:8000",
     "jwtSecret": "queue alpha north zero plus journey boss illness time had number nice paper uber who who",
     "rootId": "5pR2Lf|v0lzhnKst6#6MLk*?7L?rDuYj",
-    "rootName": "PapaGrinch27",
+    "rootName": "PapaGrinch27@teng.com",
     "rootPassword": "le89~!vs1000_"
 }

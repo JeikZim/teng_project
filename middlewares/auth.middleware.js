@@ -16,7 +16,7 @@ module.exports = (req, res, next) => {
             if (err) {
                 isExpire = err.message === 'jwt expired';
             } else {
-                req.admin = decoded;
+                req.user = decoded;
             }
         });
         if (isExpire) {
